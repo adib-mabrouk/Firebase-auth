@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Oswald&family=Poppins&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+.register-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    font-family: poppins;
+    
+}
+.image{
+    background-image: url(adib.jpg);
+    background-size: cover;
+    width: 80%;
+}
+
+.register{
+    display: flex;
+    justify-content: space-around;
+    height: 30%;
+    align-items: flex-start;
+    align-content: flex-start;
+    
+}
+.head{
+    display: flex;
+    padding: 10px;
+    position: relative;
+    top: 40px;
+    left: 30px;
+    font-size: 30px;
+    font-weight: 900;
+    width: 150px;
+}
+.register-input{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 120px;
+    right: 110px;
+    justify-content: space-around;
+    height: 250px;
+}
+.register-input input{
+    display: flex;
+    width: 250px;
+    height: 40px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 2px #999898;
+    outline: none;
+    
+}
+.register-input span{
+    font-size: 15px;
+    color: #a09f9f;
+}
+input::placeholder{
+    color: #797878;
+    font-family: poppins;
+}
+input:focus::placeholder{
+    color: transparent;
+    transition: 0.5s;
+}
+
+.register-input input:focus{
+    border-bottom:solid 2px rgb(13, 175, 126);
+    transition: 1s;
+
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    top: 30px;
+    justify-content: space-around;
+    
+}
+
+.login-button{
+    width: 200px;
+    height: 40px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-color:rgb(13, 175, 126) ;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .5);
+
+}
+
+.login-button:hover{
+    background-color: white;
+    border: solid 2px rgb(13, 175, 126);
+    color: rgb(13, 175, 126);
+    transition: 0.5s;
+}
